@@ -1,0 +1,81 @@
+.services {
+  padding: 83px 0 42px;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 35px;
+  }
+
+  &-info {
+    color: $default-text-color;
+    max-width: 468px;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+    text-align-last: left;
+  }
+
+  &-text {
+    @extend %inter-400;
+    font-size: 18px;
+    line-height: calc(31 / 18 * 100%);
+    margin-bottom: 22px;
+  }
+
+  ul.services-list {
+    padding-left: 10px;
+    list-style: '- ';
+    @extend %inter-400;
+    font-size: 16px;
+    line-height: calc(31 / 16 * 100%);
+    margin-bottom: 38px;
+  }
+
+  &-btn {
+    max-width: 410px;
+    padding: 0 22px;
+  }
+
+
+  &-people__img {
+    position: absolute;
+    height: 108%;
+    right: -93px;
+  }
+}
+
+
+@media (max-width: 1360px) {
+  .services-people__img {
+    position: static;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 960px) {
+  .services {
+    &-inner {
+      flex-direction: column;
+    }
+
+    &-info {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    &-people__img {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+@media (max-width: 560px) {
+  .services-title {
+    max-width: 330px
+  }
+}

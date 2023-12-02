@@ -1,0 +1,54 @@
+.main{
+  padding-bottom: 105px;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  color: $default-text-color;
+  @extend %inter-600;
+  font-size: 40px;
+  line-height: calc(54 / 40 * 100%);
+}
+
+@media (max-width: 760px) {
+  .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.strong-text {
+  @extend %inter-600;
+}
+
+.button {
+  color: $btn-text-color;
+  @extend %inter-600;
+  height: 80px;
+  box-shadow: 0 4px 0 #d39826, inset 0 0 6px #ffffff;
+  border-radius: 40px;
+  text-align: center;
+  background-color: #ffc350;
+  background-image: linear-gradient(To Top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 49%, rgba(255, 255, 255, 0) 100%);
+  color: #906105;
+  font-size: 16px;
+  transition: 0.4s;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover{
+  background-color: rgb(250 193 68 / 76%);
+  transition: 0.4s;
+}
