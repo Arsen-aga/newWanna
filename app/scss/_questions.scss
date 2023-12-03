@@ -1,0 +1,15 @@
+.questions{
+  padding: 83px 0 110px;
+  &-title{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 42px;
+  }
+  &-slider{
+    margin-bottom: 52px;
+  }
+}
+
+.slick-arrow{
+  background-color: red;
+}

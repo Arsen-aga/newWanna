@@ -30,5 +30,12 @@ images.forEach(img => {
 
 Fancybox.bind("[data-fancybox]");
 
+// slick
 
+$('.slider').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  dots: true,
+});
 

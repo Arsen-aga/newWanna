@@ -12,10 +12,14 @@ const newer = require('gulp-newer');
 
 const styleList = [
   'node_modules/@fancyapps/ui/dist/fancybox/fancybox.css',
+  'app/scss/slick.scss',
+  // 'app/scss/slick-theme.scss',
   'app/scss/style.scss',
 ];
 const scriptList = [
   'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
+  'app/js/jquery.js',
+  'app/js/slick.min.js',
   'app/js/main.js',
 ];
 
