@@ -2,10 +2,7 @@
   padding: 83px 0 42px;
 
   &-inner {
-    display: flex;
-    justify-content: space-between;
     position: relative;
-    gap: 35px;
   }
 
   &-info {
@@ -15,7 +12,8 @@
 
   &-title {
     margin-bottom: 25px;
-    text-align-last: left;
+    text-align: left;
+    max-width: 440px
   }
 
   &-text {
@@ -27,11 +25,13 @@
 
   ul.services-list {
     padding-left: 10px;
-    list-style: '- ';
     @extend %inter-400;
     font-size: 16px;
     line-height: calc(31 / 16 * 100%);
     margin-bottom: 38px;
+  }
+  &-list__item::before{
+    content: '-';
   }
 
   &-btn {
@@ -44,31 +44,56 @@
     position: absolute;
     height: 108%;
     right: -93px;
+    top: 0;
   }
 }
 
 
 @media (max-width: 1360px) {
   .services-people__img {
-    position: static;
+    right: 0;
     height: 100%;
+    width: 50%;
     object-fit: cover;
   }
 }
 
 @media (max-width: 960px) {
   .services {
+    padding: 56px 0 0;
     &-inner {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      text-align: center;
+    }
+    
+    &-info {
+      max-width: 468px;
+      margin: 0 auto;
+    }
+    
+    &-title {
+      margin: 0 auto 25px;
+      text-align: center;
     }
 
-    &-info {
-      max-width: 100%;
-      margin: 0 auto;
+    ul.services-list {
+      margin-bottom: 0;
+    }
+
+    &-btn {
+      max-width: 444px;
+      padding: 0 22px;
+      width: 100%;
+      order: 1;
     }
 
     &-people__img {
       margin: 0 auto;
+      position: static;
+      width: 100%;
     }
   }
 }
@@ -76,6 +101,7 @@
 
 @media (max-width: 560px) {
   .services-title {
-    max-width: 330px
+    max-width: 355px;
+    font-size: 31px;
   }
 }

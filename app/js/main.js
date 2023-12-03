@@ -29,3 +29,6 @@ images.forEach(img => {
 //fancybox
 
 Fancybox.bind("[data-fancybox]");
+
+
+

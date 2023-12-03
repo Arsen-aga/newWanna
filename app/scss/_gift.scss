@@ -1,5 +1,5 @@
 .gift {
-  padding-top: 160px;
+  padding: 160px 0 130px;
 
   &-title {
     text-align: center;
@@ -99,95 +99,93 @@
 }
 
 @media (max-width: 1140px) {
-  .gift-info__text::before {
-    content: '';
-    position: absolute;
-    height: 290px;
-    width: 400px;
-    border-bottom: 3px solid #F4BE5D;
-    border-left: 3px solid #F4BE5D;
-    left: 0;
-    bottom: 0;
-  }
 
+  .gift-info__text::before,
   .gift-info__text::after {
-    content: '';
-    position: absolute;
     height: 290px;
     width: 400px;
-    border-top: 3px solid #F4BE5D;
-    border-right: 3px solid #F4BE5D;
-    right: 0;
-    top: 0;
   }
 }
 
 @media (max-width: 960px) {
   .gift {
-    padding-top: 80px;
+    padding: 110px 0 105px;
+
+    &-title {
+      margin: 0 auto 65px;
+      max-width: 556px;
+    }
+
+    &-items {
+      flex-direction: column;
+    }
+
+    &-video {
+      max-width: 620px;
+      width: 100%;
+    }
+
+    &-info__text::before,
+    &-info__text::after {
+      max-height: 282px;
+      max-width: 526px;
+      width: 92%;
+      height: 92%;
+    }
+
+    &-video__img {
+      width: 100%;
+    }
   }
 
-  .gift-items {
-    flex-direction: column;
-  }
-
-  .gift-info__text,
-  .gift-video {
-    max-width: 100%;
-  }
-
-  .gift-video {
-    width: 100%;
-  }
-
-  .gift-info__text::before,
-  .gift-info__text::after {
-    display: none;
-  }
-
-  .gift-info__text {
-    border: 3px solid #F4BE5D;
-  }
-
-  .gift-video__img {
-    width: 100%;
-  }
 }
 
 @media (max-width: 560px) {
   .gift {
-    padding-top: 40px;
+    padding: 74px 0 90px;
+
+    &-items {
+      gap: 0;
+    }
+
+    &-title {
+      max-width: 400px;
+      font-size: 28px;
+      margin-bottom: 45px;
+    }
+
+    &-info__text {
+      padding: 24px 20px 30px;
+      margin-bottom: 65px;
+    }
+
+    &-video__play-link {
+      width: 80px;
+      height: 80px;
+    }
+
+    &-video__play-img {
+      margin-left: 35%;
+      height: 30px;
+      width: 30px;
+    }
   }
 
-  .gift-title {
-    margin-bottom: 35px;
-  }
-
-  .gift-info__text {
-    padding: 20px 25px;
-    font-size: 16px;
-  }
-
-  .gift-video__play-link {
-    width: 80px;
-    height: 80px;
-  }
-
-  .gift-video__play-img {
-    margin-left: 35%;
-    height: 30px;
-    width: 30px;
-  }
 }
 
 @media (max-width: 450px) {
   .gift {
-    padding-top: 20px;
+    padding: 40px 0;
+
+    &-video__bottom-title {
+      width: 245px;
+      padding: 6px 26px;
+      font-size: 14px;
+    }
+
+    &-info__text {
+      font-size: 15px;
+    }
   }
 
-  .gift-video__bottom-title {
-    width: 245px;
-    padding: 6px 26px;
-    font-size: 14px;
-  }
 }
