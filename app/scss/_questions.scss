@@ -1,15 +1,110 @@
-.questions{
+.questions {
   padding: 83px 0 110px;
-  &-title{
+
+  &-title {
     text-align: center;
     max-width: 600px;
     margin: 0 auto 42px;
   }
-  &-slider{
-    margin-bottom: 52px;
+
+  &-slider {
+    margin-bottom: 62px;
+  }
+
+  &-btn {
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
-.slick-arrow{
-  background-color: red;
+.slick-list {
+  margin-bottom: 52px;
+}
+
+ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0;
+}
+
+ul.slick-dots button {
+  background-color: transparent;
+  border: 1px solid #F6C161;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul.slick-dots .slick-active button {
+  background-color: #F6C161;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: -16px;
+  width: 47px;
+  height: 47px;
+  padding: 0;
+  font-size: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #F6C161;
+  background-image: url('../images/questions/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 56% center;
+  cursor: pointer;
+}
+
+
+.slick-prev {
+  left: calc(50% - 105px);
+  transform: rotate(180deg);
+}
+
+.slick-next {
+  right: calc(50% - 105px);
+}
+
+@media (max-width: 960px) {
+  .questions {
+    padding: 36px 0 88px;
+
+    &-title {
+      margin-bottom: 35px;
+    }
+
+    &-slider {
+      margin-bottom: 56px;
+    }
+  }
+
+  .slider-item__img {
+    margin: 0 auto;
+  }
+
+  .slick-prev {
+    left: calc(50% - 150px);
+  }
+
+  .slick-next {
+    right: calc(50% - 150px);
+  }
+}
+
+@media (max-width: 540px) {
+  .questions {
+    padding: 40px 0;
+
+    &-title {
+      max-width: 242px;
+    }
+
+    &-btn {
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  }
 }
