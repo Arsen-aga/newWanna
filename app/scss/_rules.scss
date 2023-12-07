@@ -1,9 +1,11 @@
 .rules {
   color: $default-text-color;
   @extend %inter-500;
-  &__inner{
+
+  &__inner {
     padding-top: 95px;
   }
+
   &__title {
     @extend %inter-600;
     text-align: center;
@@ -54,10 +56,16 @@
     }
 
     &-right {
+      position: relative;
       height: 130px;
       width: 130px;
       border-radius: 50%;
       background-color: #F6F6F6;
+    }
+    &-img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
     }
   }
 }
@@ -84,4 +92,32 @@
   position: absolute;
   top: -16px;
   right: -14px;
+}
+
+@media (max-width: 960px) {
+  .rules {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__descr {
+      max-width: 588;
+      margin: 0 auto 28px;
+      font-size: 20px;
+    }
+
+    &__item-info {
+      max-width: 350px;
+    }
+
+    &__item-descr {
+      font-size: 13px;
+    }
+
+    &__item-right {
+      min-height: 122px;
+      min-width: 122px;
+    }
+  }
+
 }

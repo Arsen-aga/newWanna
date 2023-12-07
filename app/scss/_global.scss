@@ -1,4 +1,4 @@
-.main{
+.main {
   padding-bottom: 105px;
 }
 
@@ -43,7 +43,13 @@
   justify-content: center;
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(250 193 68 / 76%);
   transition: 0.4s;
+}
+
+@media (max-width: 960px) {
+  .main {
+    padding-bottom: 45px;
+  }
 }
