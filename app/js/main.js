@@ -39,11 +39,19 @@ $('.slider').slick({
   dots: true,
   responsive: [
     {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+      },
+    },
+    {
       breakpoint: 960,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-      }
+      },
     },
   ],
 });

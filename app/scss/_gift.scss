@@ -1,10 +1,5 @@
 .gift {
-  padding: 160px 0 130px;
-
-  &-title {
-    text-align: center;
-    margin-bottom: 82px;
-  }
+  padding: 80px 0;
 
   &-items {
     display: flex;
@@ -109,10 +104,7 @@
 
 @media (max-width: 960px) {
   .gift {
-    padding: 110px 0 105px;
-
     &-title {
-      margin: 0 auto 65px;
       max-width: 556px;
     }
 
@@ -140,23 +132,26 @@
 
 }
 
+
+@media (max-width: 720px) {
+  .gift {
+    padding: 50px 0;
+  }
+}
+
 @media (max-width: 560px) {
   .gift {
-    padding: 74px 0 90px;
-
     &-items {
       gap: 0;
     }
 
     &-title {
       max-width: 400px;
-      font-size: 28px;
-      margin-bottom: 45px;
     }
 
     &-info__text {
       padding: 24px 20px 30px;
-      margin-bottom: 65px;
+      margin-bottom: 20px;
     }
 
     &-video__play-link {
@@ -175,7 +170,6 @@
 
 @media (max-width: 450px) {
   .gift {
-    padding: 40px 0;
 
     &-video__bottom-title {
       width: 245px;

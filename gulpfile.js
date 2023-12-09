@@ -52,7 +52,7 @@ function scripts() {
 }
 
 function images() {
-  return src(['app/images/*.*'])
+  return src(['app/images/**/*.*'])
     .pipe(newer('app/images'))
     .pipe(imagemin())
 
@@ -82,7 +82,7 @@ function cleanDist() {
 function building() {
   return src([
     'app/css/style.min.css',
-    'app/images/*.*',
+    'app/images/**/*.*',
     'app/js/main.min.js',
     'app/**/*.html'
   ], { base: 'app' })
