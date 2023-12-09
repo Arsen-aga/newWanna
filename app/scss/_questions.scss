@@ -89,7 +89,7 @@ ul.slick-dots .slick-active button {
 
 @media (max-width: 720px) {
   .questions {
-      padding: 50px 0;
+    padding: 50px 0;
   }
 }
 
@@ -98,12 +98,6 @@ ul.slick-dots .slick-active button {
 
     &-title {
       max-width: 242px;
-    }
-
-    &-btn {
-      max-width: 200px;
-      font-size: 14px;
-      margin: 0 auto;
     }
   }
 
@@ -116,6 +110,15 @@ ul.slick-dots .slick-active button {
   }
 
   .slick-arrow {
-    bottom: -70px;
+    bottom: 0;
+    top: 50%;
+  }
+
+  .slick-prev {
+    left: calc(50% - 160px);
+  }
+
+  .slick-next {
+    right: calc(50% - 160px);
   }
 }
