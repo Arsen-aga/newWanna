@@ -59,12 +59,12 @@ ul.slick-dots .slick-active button {
 
 
 .slick-prev {
-  left: calc(50% - 105px);
+  left: calc(50% - 125px);
   transform: rotate(180deg);
 }
 
 .slick-next {
-  right: calc(50% - 105px);
+  right: calc(50% - 125px);
 }
 
 @media (max-width: 960px) {
@@ -79,11 +79,11 @@ ul.slick-dots .slick-active button {
   }
 
   .slick-prev {
-    left: calc(50% - 150px);
+    left: calc(50% - 165px);
   }
 
   .slick-next {
-    right: calc(50% - 150px);
+    right: calc(50% - 165px);
   }
 }
 
