@@ -58,19 +58,21 @@
   &__img {
     position: relative;
     left: -55px;
+    @extend %img-block;
   }
 }
 
-.form,
-.opportunity-form__bottom {
+.form-data,
+.opportunity-form-data__bottom {
   max-width: 428px;
   border-radius: 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
   text-align: center;
   color: $default-text-color;
+  background-color: #ffffff;
 }
 
-.form {
+.form-data {
   padding: 30px 30px 20px;
   margin-bottom: 23px;
 
@@ -132,6 +134,9 @@
     max-height: 350px;
     margin-bottom: 23px;
   }
+  & a.form-btn{
+    color: #906105;
+  }
 
   &-bottom__text {
     color: $default-text-color;
@@ -143,13 +148,16 @@
   }
 }
 
-.opportunity-form__bottom {
+.opportunity-form-data__bottom {
   padding: 13px 89px 22px;
 
   &-title {
     font-size: 22px;
     line-height: calc(33 / 22 * 100%);
     margin-bottom: 18px;
+  }
+  &-img{
+    @extend %img-block;
   }
 
   &-link {
@@ -175,8 +183,8 @@
   }
 
   .opportunity-advice,
-  .form,
-  .opportunity-form__bottom {
+  .form-data,
+  .opportunity-form-data__bottom {
     margin: 0 auto;
   }
 
@@ -184,11 +192,11 @@
     margin-bottom: 35px;
   }
 
-  .opportunity-form__bottom {
+  .opportunity-form-data__bottom {
     margin-bottom: 30px;
   }
 
-  .form {
+  .form-data {
     margin-bottom: 23px;
   }
 
@@ -206,8 +214,8 @@
 
 @media (max-width: 720px) {
   .opportunity {
-      padding: 50px 0;
-    }
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 590px) {
@@ -240,31 +248,31 @@
 
 @media (max-width: 430px) {
 
-  .form,
-  .opportunity-form__bottom {
+  .form-data,
+  .opportunity-form-data__bottom {
     max-width: 386px;
   }
 
-  .form-title {
+  .form-data-title {
     font-size: 20px;
   }
 
-  .form-text {
+  .form-data-text {
     font-size: 14px;
     margin-bottom: 23px;
   }
 
-  .opportunity-form__bottom {
+  .opportunity-form-data__bottom {
     padding: 13px 80px 22px;
   }
 
-  .opportunity-form__bottom-title {
+  .opportunity-form-data__bottom-title {
     font-size: 19px;
   }
 }
 
 @media (max-width: 380px) {
-  .opportunity-form__bottom {
+  .opportunity-form-data__bottom {
     padding: 13px 55px 22px;
   }
 }

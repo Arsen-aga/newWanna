@@ -38,6 +38,7 @@
     border-radius: 15px;
     margin-bottom: 20px;
     width: 100%;
+    @extend %img-block;
   }
 
   &__title {
@@ -88,7 +89,7 @@
 
   &__link {
     color: #4E4E4E;
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-align: center;
     font-size: 16px;
     display: block;

@@ -51,13 +51,14 @@
 
   &__link {
     color: #FFC04B;
-    text-decoration-line: underline;
+    text-decoration-line: underline !important;
   }
 
   &__img {
     border-radius: 50%;
     height: 174px;
     width: 174px;
+    @extend %img-block;
   }
 }
 

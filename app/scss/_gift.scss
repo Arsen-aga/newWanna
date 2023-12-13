@@ -43,6 +43,9 @@
   &-video {
     max-width: 554px;
     position: relative;
+    &__img{
+      @extend %img-block;
+    }
   }
 
   &-video__play {
@@ -68,6 +71,7 @@
 
     &-img {
       margin-left: 40%;
+      @extend %img-block;
     }
   }
 

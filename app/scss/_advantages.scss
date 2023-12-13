@@ -26,12 +26,17 @@
     margin-bottom: 35px;
   }
 
+  &__display-img {
+    @extend %img-block;
+  }
+  
   &__display-img--top {
     position: absolute;
     top: 11px;
     bottom: 0;
     left: 17px;
     right: 0;
+    @extend %img-block;
   }
 
   &__title {
